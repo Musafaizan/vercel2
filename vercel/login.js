@@ -1,4 +1,7 @@
- import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 
 const firebaseConfig = {
@@ -53,7 +56,7 @@ loginButton.addEventListener("click", async function(event) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
 
-      alert("Login successful! Welcome back!");
+      alert("Login successful! Welcome to homepage!");
       window.location.href = "home.html"; 
 
     } catch (error) {
